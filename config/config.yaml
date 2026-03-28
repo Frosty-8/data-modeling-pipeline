@@ -1,0 +1,11 @@
+data:
+  records: 1000
+
+validation:
+  age_min: 18
+  age_max: 60
+  salary_min: 30000
+  salary_max: 200000
+
+quality:
+  null_threshold: 0.2   # 20% allowed

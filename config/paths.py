@@ -8,3 +8,7 @@ PROCESSED_DATA_PATH = DATA_DIR / "processed" / "cleaned_data.csv"
 CONFIG_PATH = BASE_DIR / "config" / "config.yaml"
 
 DB_PATH = DATA_DIR / "pipeline.db"
+
+# new paths for artifacts
+ARTIFACTS_DIR = BASE_DIR / "artifacts"
+MODEL_PATH = ARTIFACTS_DIR / "model.pkl"

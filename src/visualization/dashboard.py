@@ -8,7 +8,7 @@ from config.paths import DB_PATH
 # -----------------------------
 # 1️⃣ Helper functions
 # -----------------------------
-
+ 
 def load_data(db_path=DB_PATH):
     """Load employee data from SQLite database"""
     conn = sqlite3.connect(str(db_path))

@@ -10,3 +10,6 @@ class DatabaseHandler:
         
     def fetch_all(self, table_name="employees"):
         return pd.read_sql(f"SELECT * FROM {table_name}", self.engine)
+    
+    def run_query(self, query):
+        return pd.read_sql(query, self.engine)

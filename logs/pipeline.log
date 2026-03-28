@@ -1,8 +1,31 @@
-2026-03-27 21:16:16,955 - INFO - Pipeline started.....
-2026-03-27 21:16:17,057 - INFO - Data generated......
-2026-03-27 21:16:17,061 - INFO - Data cleaned.....
-2026-03-27 21:16:17,063 - INFO - Validation Errors: [('invalid_email', 198), ('invalid_age', 0), ('invalid_salary', 0), ('total_nulls', 1978)]
-2026-03-27 21:16:17,063 - INFO - Data Quality scores: 65.46%
-2026-03-27 21:16:17,087 - INFO - Data saved to database
-2026-03-27 21:16:17,087 - INFO - \u2705 Pipeline executed successfully!
-2026-03-27 21:16:17,087 - INFO - \u2705 Pipeline done | Quality Score: 65.46%
+2026-03-28 19:59:58,099 - INFO - Pipeline started.....
+2026-03-28 19:59:58,217 - INFO - Data generated......
+2026-03-28 19:59:58,227 - INFO - Data cleaned.....
+2026-03-28 19:59:58,227 - INFO - Validation Errors: [('invalid_email', 146), ('invalid_age', 0), ('invalid_salary', 0), ('total_nulls', 249)]
+2026-03-28 19:59:58,227 - INFO - Data Quality scores: 93.42%
+2026-03-28 19:59:58,246 - INFO - Data saved to database
+2026-03-28 19:59:58,246 - INFO - \u2705 Pipeline executed successfully!
+2026-03-28 19:59:58,246 - INFO - \u2705 Pipeline done | Quality Score: 93.42%
+2026-03-28 19:59:58,246 - INFO - Feature engineering
+2026-03-28 19:59:58,246 - INFO - Training model
+2026-03-28 19:59:58,656 - INFO - Evaluating model
+2026-03-28 19:59:58,683 - INFO - Model Accuracy: 0.84
+2026-03-28 19:59:58,683 - INFO - Classification Report:
+              precision    recall  f1-score   support
+
+          HR       0.90      0.83      0.86        64
+          IT       0.93      0.77      0.84        65
+       SALES       0.75      0.94      0.83        69
+     UNKNOWN       0.00      0.00      0.00         2
+
+    accuracy                           0.84       200
+   macro avg       0.64      0.63      0.63       200
+weighted avg       0.85      0.84      0.84       200
+
+2026-03-28 19:59:58,683 - INFO - Running sample predictions
+2026-03-28 19:59:58,689 - INFO - Sample Predictions: ['SALES' 'IT' 'SALES' 'HR' 'IT']
+2026-03-28 19:59:58,689 - INFO - Saving predictions to database
+2026-03-28 19:59:59,106 - INFO - Predictions saved to database
+2026-03-28 19:59:59,106 - INFO - Saving model
+2026-03-28 19:59:59,117 - INFO - Model saved successfully
+2026-03-28 19:59:59,117 - INFO - SQL Analysis

@@ -16,12 +16,12 @@ class DataCleaner:
     
     def clean_age(self):
         self.df['Age'] = pd.to_numeric(self.df['Age'], errors='coerce')
-        self.df['Age'].fillna(self.df['Age'].median())
+        self.df['Age'] = self.df['Age'].fillna(self.df['Age'].median())
         return self
     
     def clean_salary(self):
         self.df['Salary'] = pd.to_numeric(self.df['Salary'], errors='coerce')
-        self.df['Salary'].fillna(self.df['Salary'].mean())
+        self.df['Salary']=self.df['Salary'].fillna(self.df['Salary'].mean())
         return self
     
     def clean_dates(self):
@@ -30,11 +30,11 @@ class DataCleaner:
     
     def clean_department(self):
         self.df['Department'] = self.df['Department'].str.upper()
-        self.df['Department'].fillna("UNKNOWN")
+        self.df['Department']=self.df['Department'].fillna("UNKNOWN")
         return self
     
     def remove_duplicates(self):
-        self.df.drop_duplicates()
+        self.df = self.df.drop_duplicates()
         return self
     
     def get_clean_data(self):

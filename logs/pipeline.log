@@ -29,3 +29,34 @@ weighted avg       0.85      0.84      0.84       200
 2026-03-28 19:59:59,106 - INFO - Saving model
 2026-03-28 19:59:59,117 - INFO - Model saved successfully
 2026-03-28 19:59:59,117 - INFO - SQL Analysis
+2026-03-28 20:52:06,656 - INFO - Pipeline started.....
+2026-03-28 20:52:06,807 - INFO - Data generated......
+2026-03-28 20:52:06,813 - INFO - Data cleaned.....
+2026-03-28 20:52:06,815 - INFO - Validation Errors: [('invalid_email', 140), ('invalid_age', 0), ('invalid_salary', 0), ('total_nulls', 245)]
+2026-03-28 20:52:06,815 - INFO - Data Quality scores: 93.58%
+2026-03-28 20:52:07,172 - INFO - Data saved to database
+2026-03-28 20:52:07,173 - INFO - \u2705 Pipeline executed successfully!
+2026-03-28 20:52:07,173 - INFO - \u2705 Pipeline done | Quality Score: 93.58%
+2026-03-28 20:52:07,173 - INFO - Feature engineering
+2026-03-28 20:52:07,180 - INFO - Training model
+2026-03-28 20:52:15,281 - INFO - Evaluating model
+2026-03-28 20:52:15,295 - INFO - Model Accuracy: 0.865
+2026-03-28 20:52:15,295 - INFO - Classification Report:
+              precision    recall  f1-score   support
+
+          HR       0.90      0.87      0.88        53
+          IT       0.93      0.81      0.87        69
+       SALES       0.80      0.99      0.88        72
+     UNKNOWN       0.00      0.00      0.00         6
+
+    accuracy                           0.86       200
+   macro avg       0.66      0.67      0.66       200
+weighted avg       0.85      0.86      0.85       200
+
+2026-03-28 20:52:15,295 - INFO - Running sample predictions
+2026-03-28 20:52:15,300 - INFO - Sample Predictions: ['IT' 'SALES' 'IT' 'SALES' 'SALES']
+2026-03-28 20:52:15,300 - INFO - Saving predictions to database
+2026-03-28 20:52:15,812 - INFO - Predictions saved to database
+2026-03-28 20:52:15,812 - INFO - Saving model
+2026-03-28 20:52:15,830 - INFO - Model saved successfully
+2026-03-28 20:52:15,830 - INFO - SQL Analysis

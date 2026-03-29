@@ -8,6 +8,7 @@ from src.utils.config_loader import ConfigLoader
 from src.feature_engineering.feature_builder import FeatureBuilder
 from src.models.train import Trainer
 from src.analysis.sql_analysis import SQLAnalyzer
+from config.paths import PROCESSED_DATA_PATH
 
 from src.models.evaluate import evaluate
 from src.models.predict import predict
@@ -52,6 +53,8 @@ class DataPipeline:
         self.logger.info(f"Validation Errors: {report['errors']}")
         self.logger.info(f"Data Quality scores: {report['quality_score']}%")
 
+        self.logger.info("Saving the data to Processed directory")
+        clean_df.to_csv(PROCESSED_DATA_PATH)
 
         db = DatabaseHandler()
         db.save(clean_df)
